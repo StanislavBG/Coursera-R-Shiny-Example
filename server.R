@@ -1,7 +1,7 @@
 # Author: Stanislav Georgiev
-library(googleVis)
 library(shiny)
 library(ggplot2)
+library(shinyapps)
 
 # str(country_data)  # iris
 shinyServer(function(input, output) {
@@ -31,3 +31,7 @@ shinyServer(function(input, output) {
 
 # rm(list=ls())
 # runApp(display.mode = "showcase")
+
+# devtools::install_github('rstudio/shinyapps')
+# shinyapps::setAccountInfo(name='stanislavbg', token='REDACTED', secret='REDACTED')
+# deployApp()
